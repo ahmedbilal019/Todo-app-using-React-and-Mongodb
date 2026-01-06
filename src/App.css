@@ -10,7 +10,7 @@ body {
 }
 .inputContainer {
   display: flex;
-  gap: 15px;
+  gap: 35px;
 }
 .inputField {
   padding: 8px 10px;
@@ -29,8 +29,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: 20px;
   margin: 5px;
+}
+.task-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
 }
 .task-desc {
   word-wrap: break-word;
@@ -42,7 +48,9 @@ body {
   gap: 20px;
 }
 .btnDelete,
-.btnEdit {
+.btnEdit,
+.btnCancel,
+.btnSave {
   border: none;
   cursor: pointer;
   font-weight: 600;
@@ -56,5 +64,25 @@ body {
 
 .btnEdit {
   background-color: blue;
+  color: white;
+}
+
+.task-desc.strike {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.edit-input {
+  padding: 8px 10px;
+  font-size: medium;
+}
+
+.btnSave {
+  background-color: #1cda48;
+  color: white;
+}
+
+.btnCancel {
+  background-color: #6c757d;
   color: white;
 }
